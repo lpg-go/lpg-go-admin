@@ -18,5 +18,5 @@ export default async function OrdersPage() {
     .order("created_at", { ascending: false })
     .limit(200)
 
-  return <OrdersTable orders={(orders ?? []) as Parameters<typeof OrdersTable>[0]["orders"]} />
+  return <OrdersTable orders={(orders ?? []) as any} />
 }

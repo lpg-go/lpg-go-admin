@@ -23,7 +23,7 @@ type Provider = {
   is_approved: boolean
   is_online: boolean
   balance: number
-  orders_count: number
+  orders_count?: number
   created_at: string
 }
 
